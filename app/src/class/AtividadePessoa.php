@@ -1,6 +1,6 @@
 <?php
 
-
+namespace app\src\class;
 
 class AtividadePessoa
 {
