@@ -1,8 +1,7 @@
 <?php
 
-require "app/class/Pessoa.php";
-require "app/class/AtividadePessoa.php";
-require "app/class/UploadFoto.php";
+require "vendor/autoload.php";
+
 
 // $pessoa = new Pessoa;
 
@@ -23,7 +22,7 @@ require "app/class/UploadFoto.php";
 // echo $atividade->andar() .' <br>';
 // echo $atividade->pular();
 
-$upload = new UploadFoto;
+$upload = new  \app\src\class\UploadFoto;
 
 $upload->file('Imagemisaias.png');
 $upload->extension();
