@@ -3,4 +3,4 @@ src/*
 vendor/*
 composer.json
 
-/vendor/
+vendor/
