@@ -2,7 +2,7 @@
 
 namespace app\src\class;
 
-class UploadFoto
+class UploadFoto extends Upload
 {
     public $file;
     public $newName;
@@ -33,3 +33,4 @@ class UploadFoto
     }
     
 }
+
