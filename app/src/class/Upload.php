@@ -4,7 +4,7 @@ namespace app\src\class;
 
 use app\traits\validationFile;
 
-class Upload
+abstract class Upload
 {
     use validationFile;
     private $file;
