@@ -10,7 +10,7 @@ class UploadFoto extends Upload
 
     public function upload()
     {
-        return $this->newName;
+        // return $this->newName;
     }
     
 }
