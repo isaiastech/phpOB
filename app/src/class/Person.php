@@ -2,23 +2,23 @@
 
 namespace app\src\class;
 
-class Person extends Hand
+class Person
 {
-    private $head;
-    private $hand;
+    private $data = [];
+    public function data(null|string $data):null|self
+    {
+        array_push($this->data, $data);
+        return null;
+    }
 
-   public function __construct()
-   {
-       $this->head = new Head;
-       $this->hand = new Hand;
-    
-   } 
-   public function create(Hand $hand)
-   {
-      $this->head->create();
-      $hand->creat();  
-   } 
-
-
+    public function info()
+    {
+      return  var_dump($this->data);
+    }
 }
 
+$isaias = new Person;
+$isaias->data('Isaias')?->info();
+
+echo Person::class . '<br>';
+echo $isaias::class;
